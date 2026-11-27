@@ -1,0 +1,6 @@
+.env
+*.key
+*.png
+*.jpg
+.DS_Store
+local/
