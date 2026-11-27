@@ -7,7 +7,7 @@
 *Turn **ORCA Bots** into autonomous project owners using `SOUL.md`, a 4-level decision tree, Markdown state machine, and local Git guardrails. (Also works with Claude Code, Cursor, Codex & Antigravity.)*
 
 [![Built for ORCA Bot](https://img.shields.io/badge/Built%20for-ORCA%20Bot-6366f1.svg)](#四orca-bot-原生-5-步上手指南)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-brightgreen.svg)](#二为什么这套框架最契合-orca-bot)
 [![Also Works With](https://img.shields.io/badge/Also%20Works%20With-Claude%20Code%20%7C%20Cursor%20%7C%20Codex-orange.svg)](#六跨平台-10-秒兼容指南)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-ff69b4.svg)](#欢迎贡献你的-orca-bot-灵魂)
