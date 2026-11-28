@@ -12,7 +12,7 @@
 [![Also Works With](https://img.shields.io/badge/Also%20Works%20With-Claude%20Code%20%7C%20Cursor%20%7C%20Codex-orange.svg)](#六跨平台-10-秒兼容指南)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-ff69b4.svg)](#欢迎贡献你的-orca-bot-灵魂)
 
-[ORCA 5 步上手](#四orca-bot-原生-5-步上手指南) · [真实运行演示](#三它跑起来到底长什么样真实效果演示) · [4 大实战案例抄作业](#五4-大高频场景实战案例直接抄作业) · [ORCA 避坑 FAQ](#八orca-高频避坑-faq)
+[ORCA 5 步上手](#四orca-bot-原生-5-步上手指南) · [真实运行演示](#三它跑起来到底长什么样真实效果演示) · [6 大实战案例抄作业](#五6-大高频场景实战案例直接抄作业) · [ORCA 避坑 FAQ](#八orca-高频避坑-faq)
 
 </div>
 
@@ -101,7 +101,7 @@
    - 打开 ORCA，在左侧边栏 `项目` 旁点 `+` 导入该文件夹，方便随时查看 Bot 沉淀的 Markdown 与 Git 提交记录。
 
 2. **获取定制 `SOUL.md`（二选一）**
-   - **最快 1 分钟（直接抄作业）**：从下方 [第 5 节实战案例](#五4-大高频场景实战案例直接抄作业) 挑 1 份，把第一行 `{{YOUR_PROJECT_PATH}}` 改成你的本地文件夹路径。
+   - **最快 1 分钟（直接抄作业）**：从下方 [第 5 节实战案例](#五6-大高频场景实战案例直接抄作业) 挑 1 份，把第一行 `{{YOUR_PROJECT_PATH}}` 改成你的本地文件夹路径。
    - **3 分钟自由定制**：复制 [`core/META_PROMPT.md`](core/META_PROMPT.md) 里的「灵魂编译元提示词」，只改底部 4 行需求发给任意大模型，拿到定制 `SOUL.md`。
 
 3. **新建 ORCA Bot 并粘贴灵魂**
@@ -125,7 +125,7 @@
 
 ---
 
-## 五、4 大高频场景实战案例（直接抄作业）
+## 五、6 大高频场景实战案例（直接抄作业）
 
 所有案例均已完成隐私脱敏，严格内置「4 级决策树 + 看板状态机 + 本地 Git 安全红线」，复制到 ORCA `SOUL.md` 改一行路径即可上岗：
 
@@ -135,6 +135,8 @@
 | **财务研究** | [`examples/finance-analyst-soul.md`](examples/finance-analyst-soul.md) | 财务学习 / 基本面分析 | 只看官方年报/10-K 原文 → 三张表勾稽算账排雷 → 自动沉淀财务知识点卡片 |
 | **软件工程** | [`examples/github-indie-dev-soul.md`](examples/github-indie-dev-soul.md) | 独立开发者 / 程序员 | 读 MVP 路线图 → 单次最小代码改动 → 跑通单测/构建验证 → 更新 `CHANGELOG.md` |
 | **求职面试** | [`examples/job-prep-coach-soul.md`](examples/job-prep-coach-soul.md) | 秋招 / 实习 / 跳槽备战 | 拆目标 JD 考点矩阵 → 每日 1 道场景深挖题 → 面试官视角犀利批改 → 错题本加练 |
+| **自媒体运营** | [`examples/media-ops-soul.md`](examples/media-ops-soul.md) | 小红书 / 抖音图文创作者 | 只读质检上游内容 Bot 产出 → 6 项硬指标守门 + 周 3 更黄金档排期 → 24h 数据复盘满 3 篇反哺调优 |
+| **提示词工程** | [`examples/prompt-optimizer-soul.md`](examples/prompt-optimizer-soul.md) | 全场景 AI 重度用户 | 先 1–2 句意图复述 + 2–4 个带选项反问补齐条件 → 零脑补精准改写 → 沉淀个人提示词资产库 |
 
 > **高阶玩法：在 ORCA 里建一个“母体 Bot工厂”**
 > 把本仓库克隆并导入 ORCA，用 [`core/META_PROMPT.md`](core/META_PROMPT.md) 编译一个绑定本仓库的“母体 Bot”。以后想开任何新项目，只需对它说一句人话，它会自动读取 `core/` 母版，替你在本地建目录、写 `.gitignore` 和看板、执行 `git init`，并直接吐出可直接复制的新 Bot `SOUL.md`！
@@ -236,7 +238,9 @@ orca-bot-factory/
     ├── paper-radar-soul.md          # 案例 1：顶会论文追踪与缺陷拆解官
     ├── finance-analyst-soul.md      # 案例 2：财报与基本面研报拆解员
     ├── github-indie-dev-soul.md     # 案例 3：独立开发 Micro-SaaS 推进官
-    └── job-prep-coach-soul.md       # 案例 4：求职面试全自治备战教练
+    ├── job-prep-coach-soul.md       # 案例 4：求职面试全自治备战教练
+    ├── media-ops-soul.md            # 案例 5：自媒体质检、排期与数据复盘管家
+    └── prompt-optimizer-soul.md     # 案例 6：先反问对齐再改写的提示词优化管家
 ```
 
 ---
